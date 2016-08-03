@@ -1,0 +1,19 @@
+
+----
+Author: Deane Zhao
+Functionality:  to decode string like "\u1234" from unicode to Chinese character like "中" 
+----
+
+Function URL(BID_ID, sStatus)
+    URL = ""
+    If sStatus <> "Cancelled" And sStatus <> "Completed" Then
+        sURL1 = "http://ap-bpm01.dia.roche.com/Processes/CVP/_layouts/FormServer.aspx?XmlLocation=/processes/cvp/active%20processes/"
+        sURL2 = ".xml%3Fdefaultitemopen=1%26source=http://ap-bpm01.dia.roche.com/_layouts/k2/closepage.html"
+        
+    Else
+        sURL1 = "http://ap-bpm01.dia.roche.com/Processes/CVP/_layouts/FormServer.aspx?XmlLocation=/Processes/CVP/Completed%20Processes/"
+        sURL2 = ".xml&Source=http%3A%2F%2Fap%2Dbpm01%2Edia%2Eroche%2Ecom%2FProcesses%2FCVP%2Fdefault%2Easpx&DefaultItemOpen=1"
+    End If
+    URL = sURL1 & BID_ID & sURL2
+
+End Function
