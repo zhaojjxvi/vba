@@ -1,4 +1,5 @@
-# vba
+# Neat VBA Scripts
 
-author: Deane Zhao
-platform: VBA on Microsoft Office Excel
+Author: Deane Zhao
+Platform: VBA on Microsoft Office Excel
+
