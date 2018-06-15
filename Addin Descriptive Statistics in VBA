@@ -2,7 +2,7 @@ Application.Run "ATPVBAEN.XLAM!Descr", Input Range, Output Range, "C" or "R" dep
 
 
 So for example 
-
+```VBA
 Application.Run "ATPVBAEN.XLAM!Descr", Sheets("Sheet1").Range(Cells(1, 1), Cells(10,2)), Sheets("Sheet1").Cells(1,5), "C", False, True,1,2,95
-
+```
 will give you the descriptive statistics of the data in A1 to B10 columnwise and write it to E1. The data name is not in the first row, you will get a summary, the 1th Largest and 2nd smallest values are shown and the 95% mean confidence level.
