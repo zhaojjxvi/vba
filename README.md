@@ -3,6 +3,6 @@
 Author: Deane Zhao
 Platform: VBA on Microsoft Office Excel
 
-```bash
-sudo apt-get update
-```
+Posts to do
+[X] Applications on rMPB
+[] Data Storage and Transfering at Home.
